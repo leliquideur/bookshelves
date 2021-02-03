@@ -28,7 +28,6 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     SignupComponent,
-
     SigninComponent,
     BookListComponent,
     SingleBookComponent,

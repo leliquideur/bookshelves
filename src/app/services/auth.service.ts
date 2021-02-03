@@ -11,11 +11,11 @@ export class AuthService {
   constructor() { }
   createNewUser(email: string, password: string) {
     /* j'ai du rajouter void sur les 2 promise*/
-    return new Promise<void>(
+    return new Promise(
       (resolve, reject) => {
         firebase.auth().createUserWithEmailAndPassword(email, password).then(
           () => {
-            resolve();
+            resolve(console.log("Promise de createNewUser ok"));
           },
           (error) => {
             reject(error);
@@ -25,11 +25,11 @@ export class AuthService {
     );
   }
   signInUser(email: string, password: string) {
-      return new Promise<void>(
+      return new Promise(
         (resolve, reject) => {
           firebase.auth().signInWithEmailAndPassword(email, password).then(
             () => {
-              resolve();
+              resolve(console.log("Promise de signInUser ok"));
             },
             (error) => {
               reject(error);

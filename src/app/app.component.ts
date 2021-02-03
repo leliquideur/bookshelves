@@ -13,16 +13,16 @@ export class AppComponent {
   title = 'bookshelves';
   constructor(){
     var firebaseConfig = {
-      apiKey: "AIzaSyAxc7Fnn516gddQw0ClOamqYnchNSqEQHg",
-      authDomain: "calcul-d-installation-solaire.firebaseapp.com",
-      databaseURL: "https://calcul-d-installation-solaire-default-rtdb.europe-west1.firebasedatabase.app",
-      projectId: "calcul-d-installation-solaire",
-      storageBucket: "calcul-d-installation-solaire.appspot.com",
-      messagingSenderId: "944102497714",
-      appId: "1:944102497714:web:36a2745911442bccddd8ab",
-      measurementId: "G-9F753X47K0"
+      apiKey: "AIzaSyCQvvzPnIcZxNMuesQnWvTsq2x4vdriFqg",
+      authDomain: "bookshelves-97bcd.firebaseapp.com",
+      databaseURL: "https://bookshelves-97bcd-default-rtdb.europe-west1.firebasedatabase.app",
+      projectId: "bookshelves-97bcd",
+      storageBucket: "bookshelves-97bcd.appspot.com",
+      messagingSenderId: "840381934104",
+      appId: "1:840381934104:web:b1791a7b70e1b448b8f16d"
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
+
   }
 }
