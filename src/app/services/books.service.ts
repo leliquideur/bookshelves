@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { Book } from '../models/Book.model';
 import {Subject} from 'rxjs/Subject';
 import firebase from "firebase/app";
+import "firebase/auth";
+import "firebase/firestore";
 
 
 @Injectable({
@@ -25,7 +27,7 @@ export class BooksService {
       this.emitBooks();
     })
   }
-  getingleBook(id:number){
+  getSingleBook(id:number){
     return new Promise(
       (resolve, reject)=>{
         firebase.database().ref('books/'+id).once('value').then(
